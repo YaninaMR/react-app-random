@@ -4,8 +4,8 @@ class Random extends React.Component {
     render() {
       let superRandomCharacters = '1234567890abcdef'.split('');
       function  superRandomColor() {
-        var col = "#";
-        for (var i = 0; i < 6; i++)
+        let col = "#";
+        for (let i = 0; i < 6; i++)
           col += superRandomCharacters[Math.floor(Math.random() * 16)];
           let color = {backgroundColor: col}    
         return color;
